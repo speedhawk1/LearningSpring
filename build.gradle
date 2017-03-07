@@ -1,0 +1,19 @@
+group 'Learning'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.springframework:spring-context:4.3.7.RELEASE'
+    compile 'junit:junit:4.12'
+    compile 'org.flywaydb.flyway-test-extensions:flyway-spring4-test:4.0.1'
+
+}
